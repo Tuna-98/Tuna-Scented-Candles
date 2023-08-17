@@ -1,12 +1,21 @@
 <template>
-    <button :class="buttonClasses">
+    <nuxt-link :to="routerLink" :class="buttonClasses" target="__blank">
+      <div>{{ title }}</div>
       <slot></slot>
-    </button>
+    </nuxt-link>
   </template>
   
   <script>
   export default {
     props: {
+      routerLink: {
+        type: String,
+        default: '/'
+      },  
+      title:{
+        type: String,
+        default: 'Button'
+      },
       size: {
         type: String,
         default: 'medium'
@@ -43,15 +52,15 @@
             ];
         },
         sizeClasses() {
-            return  {
+            return {
                 'text-xs': this.size === 'small',
                 'text-sm': this.size === 'medium',
                 'text-lg': this.size === 'large',
                 'bg-blue-500 text-white': true
             };
         }
-    }
-  };
+    },
+};
   </script>
   
   <style scoped>

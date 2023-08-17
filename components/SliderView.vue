@@ -17,13 +17,13 @@ export default {
                     image: '/assets/images/slider/slider1.jpg',
                     title: 'Bring the <br>natural aroma',
                     subtitle: 'The product is made from',
-                    link: '',
+                    routerLink: '/',
                 },
                 {
                     image: '/assets/images/slider/slider2.jpg',
                     title: 'Light Good <br>Live Good',
                     subtitle: 'The product is made from',
-                    link: '',
+                    routerLink: '/',
                 }
             ]
         }

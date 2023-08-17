@@ -1,21 +1,40 @@
 <template>
-    <div>
-      <form @submit.prevent="login">
-        <input v-model="email" type="email" placeholder="Email" />
-        <input v-model="password" type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
+  <div>
+    <div class="title">
+      <h2>Login</h2>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue';
-  
-  const email = ref('');
-  const password = ref('');
-  
-  const login = () => {
-    // Add your login logic here, e.g., making API requests
-  };
-  </script>
-  
+    <div class="container form">
+      <label for="uname"><b>Username</b></label>
+      <input
+        v-model="user.username"
+        type="text"
+        class="input"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        v-model="user.password"
+        type="password"
+        class="input"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
+
+      <button @click.prevent="login" class="button">Login</button>
+    </div>
+  </div>
+</template>
+<script lang="ts" setup>
+const user = ref({
+  username: '',
+  password: '',
+});
+
+const login = async () => {
+  // TODO send user Data to the login endpoint and redirect if  successful 
+};
+</script>

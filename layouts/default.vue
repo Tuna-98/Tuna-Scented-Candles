@@ -3,7 +3,7 @@
     <Header></Header>
     <main>
       <Homepage></Homepage>
-      <!-- <nuxt /> -->
+      <nuxt />
     </main>
     <Footer></Footer>
   </div>
@@ -22,7 +22,6 @@
   };
 </script>
   
-  <style scoped>
-  /* Add your styling here */
-  </style>
-  
+<style scoped>
+/* Add your styling here */
+</style>

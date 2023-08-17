@@ -5,9 +5,13 @@
         <img :src="slide.image" alt="Slide Image" class="w-full h-full"/>
         <div class="w-full h-full absolute top-0 left-0 flex justify-center">
           <div class="container">
-            <h1 class="title text-white">{{ slide.title }}</h1>
-            <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
-            <a :href="slide.link" class="mt-3 p-3 border border-white uppercase"></a>
+            <div class="flex flex-col items-center w-full h-full">
+              <div>
+                <div class="title text-5xl text-white">{{ slide.title }}</div>
+                <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
+                <Button :routerLink="slide.routerLink" class="text-white mt-3 border px-3 py-2.5">SHOP MORE</Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -16,9 +20,13 @@
   </div>
 </template>
 <script>
-  import Swiper from 'swiper';
-  import '/swiper/css/swiper.min.css';
+import Swiper from 'swiper';
+import '/swiper/css/swiper.min.css';
+import Button from '../button/Button.vue';
 export default {
+  props: {
+    Button
+  },
   name: 'SwiperComponent',
   props: {
     slides: Array,
@@ -33,9 +41,10 @@ export default {
         spaceBetween: 30,
         keyboard: {
           enabled: true,
-      },
+        },
         pagination: {
           el: '.swiper-pagination',
+          clickable: true,
         },
         autoplay: {
           delay: 3000,
@@ -52,5 +61,6 @@ export default {
 };
 </script>
 <style scoped>
+
 </style>
   

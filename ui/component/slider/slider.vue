@@ -5,9 +5,11 @@
         <img :src="slide.image" alt="Slide Image" class="w-full h-full"/>
         <div class="w-full h-full absolute top-0 left-0 flex justify-center">
           <div class="container">
-            <h1 class="title text-white">{{ slide.title }}</h1>
-            <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
-            <a :href="slide.link" class="mt-3 p-3 border border-white uppercase"></a>
+            <div class="w-full h-full flex justify-center">
+              <h1 class="title text-white">{{ slide.title }}</h1>
+              <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
+              <a :href="slide.link" class="mt-3 p-3 border border-white uppercase"></a>
+            </div>
           </div>
         </div>
       </div>

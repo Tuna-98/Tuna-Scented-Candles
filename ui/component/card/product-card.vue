@@ -14,8 +14,6 @@
                             <li>
                                 <NextLink :to="card.routerLink"></NextLink>
                             </li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </div>
                 </div>
