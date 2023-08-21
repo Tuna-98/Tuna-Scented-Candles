@@ -3,9 +3,9 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide relative w-full" v-for="(slide, index) in slides" :key="index">
         <img :src="slide.image" alt="Slide Image" class="w-full h-full"/>
-        <div class="w-full h-full absolute top-0 left-0 flex justify-center">
+        <div class="swiper-slide__content w-full h-full absolute top-0 left-0 flex justify-center">
           <div class="container">
-            <div class="w-full h-full flex justify-center">
+            <div class="w-50 h-full flex justify-center">
               <h1 class="title text-white">{{ slide.title }}</h1>
               <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
               <a :href="slide.link" class="mt-3 p-3 border border-white uppercase"></a>
@@ -19,8 +19,8 @@
 </template>
   
 <script>
-// import Swiper from 'swiper';
-// import 'swiper/css/swiper.min.css';
+import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 
 export default {
   name: 'SwiperComponent',
@@ -55,7 +55,15 @@ export default {
   },
 };
 </script>
-
-<style scoped>
+  
+<style lang="scss" scoped>
+.swiper-slide{
+  &__content{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 </style>
   

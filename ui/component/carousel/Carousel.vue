@@ -3,13 +3,13 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide relative w-full" v-for="(slide, index) in slides" :key="index">
         <img :src="slide.image" alt="Slide Image" class="w-full h-full"/>
-        <div class="w-full h-full absolute top-0 left-0 flex justify-center">
+        <div class="swiper-slide__content w-full h-full absolute top-0 left-0 flex justify-center">
           <div class="container">
             <div class="flex flex-col items-center w-full h-full">
               <div>
-                <div class="title text-5xl text-white">{{ slide.title }}</div>
+                <h1 class="title text-5xl text-white">{{ slide.title }}</h1>
                 <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
-                <Button :routerLink="slide.routerLink" class="text-white mt-3 border px-3 py-2.5">SHOP MORE</Button>
+                <Button :routerLink="slide.routerLink" class="button text-white mt-3 border px-3 py-2.5">SHOP MORE</Button>
               </div>
             </div>
           </div>
@@ -60,7 +60,31 @@ export default {
   },
 };
 </script>
-<style scoped>
-
+<style scoped>  
+  .swiper-slide__content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+  }
+  h1{
+    font-size: 52px;
+    font-weight: 600;
+    
+  }
+  button{
+    border: 2px solid #FFFFFF;
+    padding: 6px 12px;
+    margin-top: 16px;
+    transition: .3s;
+    border-radius: 2px;
+  }
+  button:hover{
+    border: 2px solid #DB572E;
+    background: #DB572E;
+    color: #FFFFFF;
+    transition: .3s;
+  }
 </style>
   
