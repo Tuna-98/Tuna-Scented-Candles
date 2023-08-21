@@ -23,17 +23,17 @@ export default {
                     products: [
                         { 
                             name: 'Eucalyptus Essential Oil',
-                            image: '../../../public/assets/images/sp1.png',
-                            current: '$10.00',
-                            cost: '$4.00',
+                            image: '/assets/images/products/sp1.png',
+                            current: '10.00',
+                            cost: '4.00',
                             sale: 1,
                             type: 'Cented',
                         },
                         { 
                             id: 2, 
                             name: 'Rapeseed Candle',
-                            image: '../../../public/assets/images/sp2.png',
-                            current: '$22.50',
+                            image: '/assets/images/products/sp2.png',
+                            current: '22.50',
                             cost: '',
                             sale: 0,
                             type: 'Cented',
@@ -41,7 +41,7 @@ export default {
                         { 
                             id: 3, 
                             name: 'Rapeseed Wax Candle',
-                            image: '../../../public/assets/images/sp3.png',
+                            image: '/assets/images/products/sp3.png',
                             current: 42.00,
                             cost: 0,
                             sale: 0,
@@ -50,44 +50,8 @@ export default {
                         { 
                             id: 4, 
                             name: 'Fresh Brew Limited Edition',
-                            image: '../../../public/assets/images/sp2.png',
+                            image: '/assets/images/products/sp4.png',
                             current: 24.00,
-                            cost: 0,
-                            sale: 0,
-                            type: 'Cented',
-                        },
-                        { 
-                            id: 5, 
-                            title: 'Discovery Set',
-                            image: '../../../public/assets/images/sp2.png',
-                            current: 44.00,
-                            cost: 0,
-                            sale: 0,
-                            type: 'Cented',
-                        },
-                        { 
-                            id: 6, 
-                            name: 'Rapeseed Candle Triple Wick',
-                            image: '../../../public/assets/images/sp2.png',
-                            current: 44.00,
-                            cost: 0,
-                            sale: 0,
-                            type: 'Cented',
-                        },
-                        { 
-                            id: 7, 
-                            name: 'Rapeseed Wax Candle',
-                            image: '../../../public/assets/images/sp2.png',
-                            current: 44.00,
-                            cost: 0,
-                            sale: 0,
-                            type: 'Cented',
-                        },
-                        { 
-                            id: 8, 
-                            name: 'Terracotta Tealight Holder',
-                            image: '../../../public/assets/images/sp2.png',
-                            current: 20.00,
                             cost: 0,
                             sale: 0,
                             type: 'Cented',
@@ -97,17 +61,56 @@ export default {
                 {
                     id: 2,
                     type: 'Scented Candles',
-                    products: []
+                    products: [
+                    { 
+                            id: 1, 
+                            name: 'Discovery Set',
+                            image: '/assets/images/products/sp5.png',
+                            current: 44.00,
+                            cost: 0,
+                            sale: 0,
+                            type: 'Cented',
+                        },
+                        { 
+                            id: 2, 
+                            name: 'Rapeseed Candle Triple Wick',
+                            image: '/assets/images/products/sp6.png',
+                            current: 44.00,
+                            cost: 0,
+                            sale: 0,
+                            type: 'Cented',
+                        },
+                    ]
                 },
                 {
                     id: 2,
                     type: 'Candle Jars',
-                    products: []
+                    products: [
+                        { 
+                            id: 1, 
+                            name: 'Rapeseed Wax Candle',
+                            image: '/assets/images/products/sp7.png',
+                            current: 44.00,
+                            cost: 0,
+                            sale: 0,
+                            type: 'Cented',
+                        },
+                    ]
                 },
                 {
                     id: 3,
                     type: 'Candle Holders',
-                    products: []
+                    products: [
+                        { 
+                            id: 1, 
+                            name: 'Terracotta Tealight Holder',
+                            image: '/assets/images/products/sp8.png',
+                            current: 20.00,
+                            cost: 0,
+                            sale: 0,
+                            type: 'Cented',
+                        },
+                    ]
                 },
                 {
                     id: 4,
@@ -132,5 +135,6 @@ export default {
         line-height: 48px;
         color: #000000;
     }
+
 
 </style>

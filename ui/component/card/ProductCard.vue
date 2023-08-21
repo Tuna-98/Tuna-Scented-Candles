@@ -34,6 +34,7 @@
         name:'productCard', 
         props: {
             cardList: Array,
+            default: () => []
         },
         data(){
             return{
