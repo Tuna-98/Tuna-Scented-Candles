@@ -38,14 +38,6 @@
         },
         data(){
             return{
-                cardList:{
-                    image: "",
-                    title: "",
-                    routerLink: "",
-                    name: "",
-                    current: 0,
-                    cost: 0,
-                }
             }
         },
         mounted(){   
@@ -60,4 +52,5 @@
     }
 </script>
 <style>
+
 </style>

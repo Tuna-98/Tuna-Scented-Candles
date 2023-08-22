@@ -71,14 +71,17 @@ export default {
   h1{
     font-size: 52px;
     font-weight: 600;
-    
+  }
+  p{
+    font-size: 24px;
   }
   button{
     border: 2px solid #FFFFFF;
-    padding: 6px 12px;
+    padding: 12px 24px;
     margin-top: 16px;
     transition: .3s;
     border-radius: 2px;
+    font-size: 22px;
   }
   button:hover{
     border: 2px solid #DB572E;

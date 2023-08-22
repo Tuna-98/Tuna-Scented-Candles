@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Carousel :slides="slides"/>
+        <Carousel :slides="slides.slice(0, 4)"/>
     </div>
 </template>
 

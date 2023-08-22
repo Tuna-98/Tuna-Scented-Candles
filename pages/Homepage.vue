@@ -2,20 +2,26 @@
   <div>
     <SliderView></SliderView>
     <ProductTypeView></ProductTypeView>
-    <!-- <ProductTypeView></ProductTypeView> -->
+    <RoomView></RoomView>
+    <TrendView></TrendView>
+    <ImageInsView></ImageInsView>
+    
   </div>
 </template>
 
 <script>
-// import SwiperComponent from "../components/Slider.vue";
-// import ProductCard from '/components/ProductCard.vue';
 import SliderView from '../components/SliderView.vue';
 import ProductTypeView from '../components/ProductTypeView.vue';
-// import ProductTypeView from '../components/ProductTypeView.vue';
+import RoomView from '../components/RoomView.vue';
+import TrendView from '../components/TrendView.vue';
+import ImageInsView from '../components/ImageInsView.vue';
 export default {
   components: {
     SliderView,
-    ProductTypeView
+    ProductTypeView,
+    RoomView,
+    TrendView,
+    ImageInsView
   },
   data(){
     return{

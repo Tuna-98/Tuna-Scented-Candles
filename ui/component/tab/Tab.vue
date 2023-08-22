@@ -96,7 +96,7 @@ export default {
 };
 </script>
 <style scoped>
-    button{
+    button {
         border: 1px solid #D0D0D0;
         /* padding: 8px 16px; */
         margin: 0 15px;
@@ -107,13 +107,13 @@ export default {
         width: 154px;
         height: 49px;
     }
-    button:hover{
+    button:hover {
         border: 1px solid #DB572E;    
         color: #FFFFFF;
         background-color: #DB572E;
         transition: .4s;
     }
-    .tabActive{
+    .tabActive {
         border: 1px solid #DB572E;    
         color: #FFFFFF;
         background-color: #DB572E;
@@ -124,9 +124,6 @@ export default {
     .el-col .card {
         width: 100%;
         position: relative
-    }
-    .el-col .card img {
-        height: 300px;
     }
     .el-col .card h1 {
         font-size: 20xp;
@@ -167,11 +164,11 @@ export default {
         left: 0;
         transition: .4s;
     }
-    .card:hover .card__top .card__top__action{
+    .card:hover .card__top .card__top__action {
         bottom: 30px;
         transition: .4s;
     }
-    ul li{
+    ul li {
         width: 36px;
         height: 36px;
         background-color: #FFFFFF;
@@ -180,14 +177,14 @@ export default {
         transition: .3s;
         cursor: pointer;
     }
-    ul li:hover{
+    ul li:hover {
         background-color: #DB572E;
         transition: .3s;
     }
-    ul li svg{
+    ul li svg {
         transition: .3s;
     }
-    ul li:hover svg{
+    ul li:hover svg {
         fill: #FFFFFF;
         transition: .3s;
     }

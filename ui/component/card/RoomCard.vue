@@ -1,30 +1,34 @@
 <template>
-  <div class="room-card w-full">
-    <img :src="roomList.image" alt="" class="room-card__image" />
-    <div class="room-card__content w-full h-full flex items-start justify-end">
-      <h1>{{ roomList.title }}</h1>
-      <p class="mt-4">{{ roomList.subtitle }}</p>
-    </div>
+  <div>
+    <el-row>
+      <el-col
+        :xs="24"
+        :sm="12"
+        class="grid-content p-4"
+        v-for="(card, index) in roomList"
+        :key="index"
+      >
+        <div class="card w-full">
+          <img :src="card.image" alt="" class="card__image w-full" />
+          <div class="card__content w-full h-full flex items-start justify-end p-6">
+            <h1 class="mb-4">{{ card.title }}</h1>
+            <p class>{{ card.subtitle }}</p>
+          </div>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
-
 <script>
 export default {
   props: {
     roomList: {
       type: Array,
-      defaul: [],
+      defaul: () => [],
     },
   },
   data() {
     return {
-      roomList: [
-        {
-          image: "",
-          title: "",
-          subtitle: "",
-        },
-      ],
     };
   },
 };
@@ -33,12 +37,33 @@ export default {
 <style scoped>
 .card {
   overflow: hidden;
+  position: relative;
 }
 .card .card__image {
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .card:hover .card__image {
-  transform: scale(1.3);
-  transition: 0.3s;
+  transform: scale(1.2);
+  transition: 0.4s;
 }
+.card__content{
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+}
+h1{
+  font-size: 42px;
+  line-height: 1em;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+/* el-col{
+  padding: 0 15px !important;
+} */
 </style>
