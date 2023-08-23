@@ -1,18 +1,23 @@
 <template>
-  <div class="achievement">
-    <div class="container">
-        <div class="grid grid-cols-6 gap-4">
-            <div 
+  <div class="achievement py-10 mb-20">
+    <div class="container mx-auto py-10">
+        <el-row>
+            <el-col
+                class=" flex items-center justify-center"
                 v-for="(achievement, index) in achievements"
                 :key="index"
-                class="col-span-3"
+                :xs="24"
+                :md="12"
+                :lg="6"
             >
-                <h1 class="title">{{ achievement.number }}</h1>
-                <div class="subtitle">{{ achievement.sub }}</div>
-            </div>
-        </div>
+                <div class="w-full text-center py-6">
+                    <h1 class="title">{{ achievement.number }}</h1>
+                    <p class="subtitle mt-2">{{ achievement.sub }}</p>
+                </div>
+            </el-col>
+        </el-row>
     </div>
-  </div>
+  </div> 
 </template>
 <script>
 export default {
@@ -41,5 +46,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+    .achievement{
+        background-image: url(../public/assets/images/m3-bg-3.jpg);
+    }
+    h1{
+        font-size: 86px;
+        line-height: 1em;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+    p{
+        font-size: 32px;
+        line-height: 1em;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 </style>

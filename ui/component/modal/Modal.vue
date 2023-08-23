@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .video-modal{
         position: fixed;
         top: 0;

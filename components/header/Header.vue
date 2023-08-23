@@ -1,10 +1,10 @@
 <template>
-  <header class="bg-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+  <header>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between py-1" aria-label="Global">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          <img class="logo w-auto" src="../../public/assets/images/logo.png" alt="">
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -16,9 +16,9 @@
       </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <nuxt-link to="/" class="text-sm font-semibold leading-6 text-gray-900">Home</nuxt-link>
-        <nuxt-link to="/about" class="text-sm font-semibold leading-6 text-gray-900">About</nuxt-link>
-        <nuxt-link to="/product" class="text-sm font-semibold leading-6 text-gray-900">Product</nuxt-link>
+        <NuxtLink to="/homepage" class="text-sm font-semibold leading-6 text-gray-900">Home</NuxtLink>
+        <NuxtLink to="/about" class="text-sm font-semibold leading-6 text-gray-900">About</NuxtLink>
+        <NuxtLink to="/product" class="text-sm font-semibold leading-6 text-gray-900">Product</NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <nuxt-link to="/login" class="text-sm font-semibold leading-6 text-gray-900">Login <span aria-hidden="true">&rarr;</span></nuxt-link>
@@ -26,3 +26,16 @@
     </nav>
   </header>
 </template>
+<style scoped>
+  .logo{
+    width: 170px;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
+  }
+</style>

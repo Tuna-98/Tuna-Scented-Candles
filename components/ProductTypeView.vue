@@ -1,6 +1,6 @@
 <template>
     <div class="product-type py-10">
-        <div class="container mx-auto">
+        <div class="container mx-auto py-10">
             <h1 class="title tex-center">Candles which will take away all your worries</h1>
             <div class="tabs mt-10 w-full flex items-center justify-center">
                 <TabList :products="products.slice(0, 9)" :initialTab="products[0]?.type" />

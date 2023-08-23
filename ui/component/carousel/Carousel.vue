@@ -5,11 +5,11 @@
         <img :src="slide.image" alt="Slide Image" class="w-full h-full"/>
         <div class="swiper-slide__content w-full h-full absolute top-0 left-0 flex justify-center">
           <div class="container">
-            <div class="flex flex-col items-center w-full h-full">
-              <div>
+            <div class="flex items-center w-full h-full">
+              <div class="w-full">
                 <h1 class="title text-5xl text-white">{{ slide.title }}</h1>
                 <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
-                <Button :routerLink="slide.routerLink" class="button text-white mt-3 border px-3 py-2.5">SHOP MORE</Button>
+                <Button :routerLink="slide.routerLink" class="button text-white mt-8 border px-3 py-2.5">SHOP MORE</Button>
               </div>
             </div>
           </div>
@@ -39,6 +39,13 @@ export default {
       this.swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
+        nav:true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsiveRefreshRate: true,
         keyboard: {
           enabled: true,
         },
@@ -46,10 +53,14 @@ export default {
           el: '.swiper-pagination',
           clickable: true,
         },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        }
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       });
     },
   },

@@ -2,7 +2,7 @@
   <div>
     <Header></Header>
     <main>
-      <Homepage></Homepage>
+      <NuxtPage />
       <nuxt />
     </main>
     <Footer></Footer>
@@ -13,10 +13,12 @@
   import Header from '../components/header/Header.vue';
   import Footer from '../components/footer/Footer.vue';
   import Homepage from '../pages/Homepage.vue';
+  import About from '../pages/about.vue';
   export default {
     components: {
       Header,
       Homepage,
+      About,
       Footer
     }
   };

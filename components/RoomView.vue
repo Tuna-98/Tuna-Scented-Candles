@@ -1,6 +1,6 @@
 <template>
   <div class="room-view py-10">
-    <div class="container mx-auto">
+    <div class="container mx-auto pt-10">
       <h1 class="text-center">Burn your candle of life</h1>
       <div class="room-view__content mt-8">
         <RoomCard :roomList="roomList"></RoomCard>

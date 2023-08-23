@@ -1,11 +1,10 @@
 <template>  
-    <footer class="bg-white rounded-lg m-4">
-        <div class="container">
+    <footer class="bg-white">
+        <div class="container mx-auto">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    <img class="logo w-auto" src="../../public/assets/images/logo.png" alt="">
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
@@ -28,3 +27,8 @@
 <script>
     
 </script>
+<style scoped>
+    footer{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+</style>
