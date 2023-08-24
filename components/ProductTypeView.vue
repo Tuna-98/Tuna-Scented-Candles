@@ -124,9 +124,7 @@ export default {
             // listProduct: []
         }
     },
-    computed() {
-        
-    }
+    computed() {}
 }
 </script>
 
