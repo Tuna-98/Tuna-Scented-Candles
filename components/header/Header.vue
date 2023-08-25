@@ -19,15 +19,23 @@
         <div class="hidden lg:flex lg:gap-x-12">
           <NuxtLink to="/homepage" class="text-sm font-semibold leading-6 text-gray-900">Home</NuxtLink>
           <NuxtLink to="/about" class="text-sm font-semibold leading-6 text-gray-900">About</NuxtLink>
+          <NuxtLink to="/product" class="text-sm font-semibold leading-6 text-gray-900">Shop</NuxtLink>
           <NuxtLink to="/product" class="text-sm font-semibold leading-6 text-gray-900">Product</NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <nuxt-link to="/login" class="text-sm font-semibold leading-6 text-gray-900">Login <span aria-hidden="true">&rarr;</span></nuxt-link>
+          <NuxtLink to="/login" class="text-sm font-semibold leading-6 text-gray-900">Login <span aria-hidden="true">&rarr;</span></NuxtLink>
         </div>
       </nav>
     </div>
   </header>
 </template>
+<script>
+  export default {
+    props: {
+      
+    }
+  }
+</script>
 <style scoped>
   .logo{
     width: 170px;
