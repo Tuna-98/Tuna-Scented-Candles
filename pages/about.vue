@@ -14,7 +14,9 @@
     </div>
 
     <div class="w-full py-20">
-      <PartnerCard :partners="partners"></PartnerCard>
+      <div class="container mx-auto">
+        <PartnerCard :partners="partners"></PartnerCard>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +31,10 @@ export default {
   name: 'about',
   components: {
     IntroVue,
+
+
+
+
     WhoWeArreVue,
     Feedback,
     PartnerCard,
@@ -46,33 +52,33 @@ export default {
       products: [
         {
           id: 1,
-          type: 'All Cented',
+          type: 'Handmade Soap',
           products: [
             { 
               id: 1,
-              image: '/assets/images/products/sp1.jpg',
-              type: 'Cented',
+              image: '/assets/images/about-tab-1.jpg',
+              type: 'Handmade Soap',
             },
           ]
         },
         {
           id: 2,
-          type: 'Scented Candles',
+          type: 'Scented Candle',
           products: [
             { 
               id: 1, 
-              image: '/assets/images/products/sp5.jpg',
-              type: 'Cented',
+              image: '/assets/images/about-tab-2.jpg',
+              type: 'Scented Candle',
             },
           ]
         },
         {
           id: 3,
-          type: 'Candle Jars',
+          type: 'Perfume',
           products: [
             { 
               id: 1, 
-              image: '/assets/images/products/sp7.jpg',
+              image: '/assets/images/about-tab-3.jpg',
               type: 'Cented',
             },
           ]

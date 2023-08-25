@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full pb-20">
     <div class="container mx-auto">
       <el-row>
         <el-col :sm="24" :lg="12">

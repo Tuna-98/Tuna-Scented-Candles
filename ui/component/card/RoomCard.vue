@@ -10,7 +10,7 @@
       >
         <div class="card w-full">
           <img :src="card.image" alt="" class="card__image w-full" />
-          <div class="card__content w-full h-full flex items-start justify-end p-6">
+          <div class="card__content w-full h-full flex items-start justify-end p-4">
             <h1 class="mb-4">{{ card.title }}</h1>
             <p class>{{ card.subtitle }}</p>
           </div>
