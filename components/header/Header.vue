@@ -19,7 +19,7 @@
         <div class="hidden lg:flex lg:gap-x-12">
           <NuxtLink to="/homepage" class="text-sm font-semibold leading-6 text-gray-900">Home</NuxtLink>
           <NuxtLink to="/about" class="text-sm font-semibold leading-6 text-gray-900">About</NuxtLink>
-          <NuxtLink to="/product" class="text-sm font-semibold leading-6 text-gray-900">Shop</NuxtLink>
+          <NuxtLink to="/shop" class="text-sm font-semibold leading-6 text-gray-900">Shop</NuxtLink>
           <NuxtLink to="/product" class="text-sm font-semibold leading-6 text-gray-900">Product</NuxtLink>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">

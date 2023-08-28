@@ -214,5 +214,6 @@ ul li svg {
 ul li:hover svg {
   fill: #FFFFFF;
   transition: .3s;
-}</style>
+}
+</style>
   
