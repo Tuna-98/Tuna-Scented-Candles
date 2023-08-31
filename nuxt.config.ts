@@ -12,8 +12,15 @@ export default defineNuxtConfig({
     // 'tailwindcss',
     // 'autoprefixer',
     'nuxt-swiper',
-    // 'swiper'
+    'swiper'
   ],
-  
+  app: {
+    head: {
+      title: 'Tuna Scented Candles',
+      meta: [
+        {name: 'Descrip',}
+      ]
+    }
+  },
   alias: {},
 })
