@@ -2,12 +2,12 @@
   <div class="shop py-20">
     <div class="container mx-auto">
       <el-row>
-        <el-col :sm="24" :lg="8">
-          <div class="w-full px-4">
+        <el-col :sm="24" :lg="6">
+          <div class="w-full pl-4 pr-8">
             <ShopLeft></ShopLeft>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="16">
+        <el-col :sm="24" :lg="18">
           <ProductList></ProductList>
         </el-col>
       </el-row>
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-
+      
     }
   }
 }

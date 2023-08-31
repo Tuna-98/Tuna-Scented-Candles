@@ -1,10 +1,14 @@
 <template>
   <div class="py-20">
     <div>
-      <ProductFilterRow />
+      <ProductFilterRow 
+        :minQuantity="minQuantity"
+        :maxQuantity="maxQuantity"
+        :allQuantity="productList.length"
+      />
     </div>
-    <div class="mt-20">
-      <ProductCard :products="products"></ProductCard>
+    <div class="mt-10">
+      <ProductCard :products="productList"></ProductCard>
     </div>
   </div>
 </template>
@@ -18,7 +22,10 @@ export default {
   },
   data() {
     return {
-      products: [
+      minQuantity: 0,
+      maxQuantity: 0,
+      allQuantity: 0,
+      productList: [
         {
           id: 1,
           name: 'Eucalyptus Essential Oil',
@@ -94,9 +101,8 @@ export default {
       ]
     }
   },
-  methods: {
-
-  }
+  mounted(){
+  },
 }
 </script>
 <style></style>

@@ -5,14 +5,14 @@
         <div 
           v-for="(product, index) in products"
           :key="index"
-          class="card flex"
+          class="card flex mt-3"
         >
           <div class="card__image">
             <img :src="product.image" alt="" class="w-full">
           </div>
-          <div class="grow pl-2">
+          <div class="grow pl-4">
             <h1 class="card__name">{{ product.name }}</h1>
-            <p class="card__price">{{ product.price }}</p>
+            <p class="card__price mt-2">$ {{ product.price }}</p>
           </div>
         </div>
     </div>
@@ -26,25 +26,25 @@
           {
             id: 1,
             name:'LA RIVE MR. SHARP',
-            image: '/assets/images/m5-prod-1.jpg',
+            image: '../assets/images/products/m5-prod-1.jpg',
             price: '14.00',
           },
           {
             id: 2,
             name:'Merry Christmas! x',
-            image: '/assets/images/m5-prod-2.jpg',
+            image: '/assets/images/products/m5-prod-2.jpg',
             price: '14.00'
           },
           {
             id: 3,
             name: 'Aqua allegoria nettare di sole',
-            image: '/assets/images/m5-prod-3.jpg',
+            image: '/assets/images/products/m5-prod-3.jpg',
             price: '14.00'
           },
           {
             id: 4,
             name: 'Minu Perfume Roller',
-            image: '/assets/images/m5-prod-4.jpg',
+            image: '/assets/images/products/m5-prod-4.jpg',
             price: '14.00'
           }
         ]
@@ -56,6 +56,7 @@
   .card__image{
     width: 85px;
     height: 85px;
+    overflow: hidden;
   }
   h1{
     font-size: 30px;

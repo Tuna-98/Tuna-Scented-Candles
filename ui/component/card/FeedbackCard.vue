@@ -41,17 +41,19 @@ export default {
       this.swiper = new Swiper('.swiper-container.swiper-feedback', {
         slidesPerView: 3,
         spaceBetween: 15,
-        keyboard: {
-          enabled: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
         },
+        // autoplay: true,
+        // keyboard: {
+        //   enabled: true,
+        // },
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        }
       });
     },
   },

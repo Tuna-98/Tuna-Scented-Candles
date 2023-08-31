@@ -39,7 +39,7 @@
         <div class="notice absolute top-0 left-0 px-2 py-1" v-if="product.sale === 1">SALE!</div>
         <div class="mt-4">
           <h1 class="title">{{ product.name }}</h1>
-          <div class="flex mt-3">
+          <div class="flex items-center mt-3">
             <span class="cost" v-if="product.cost > 0">${{ product.cost }}</span>
             <span class="current">${{ product.current }}</span>
           </div>
@@ -102,9 +102,9 @@ export default {
     font-weight: 400;
     text-decoration: line-through;
     color: #858585;
+    margin-right: 10px;
   }
   .current {
-    margin-left: 10px;
     color: #222222;
     font-size: 18px;
     font-weight: 400;

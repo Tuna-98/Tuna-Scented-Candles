@@ -1,44 +1,44 @@
 <template>
-    <div class="container mx-auto py-20"> 
-      <div class="pb-20">
-        <el-row>
-          <el-col
-            :ms="24"
-            :lg="8"
-          >
-            <div class="h-full flex flex-col items-start justify-center">
-              <button
-                v-for="(tab, index) in tabs"
-                :key="index"
-                @click="activeTab = tab.id"
-                class="my-2 pl-4"
-                :class="{
-                  'tabActive' : activeTab === tab.id, 
-                  'tab': activeTab !== tab.id 
-                }"
-              >
-                {{ tab.label }}
-                <div class="line"></div>
-              </button>
+  <div class="container mx-auto py-20"> 
+    <div class="pb-20">
+      <el-row>
+        <el-col
+          :ms="24"
+          :lg="8"
+        >
+          <div class="h-full flex flex-col items-start justify-center">
+            <button
+              v-for="(tab, index) in tabs"
+              :key="index"
+              @click="activeTab = tab.id"
+              class="my-2 pl-4"
+              :class="{
+                'tabActive' : activeTab === tab.id, 
+                'tab': activeTab !== tab.id 
+              }"
+            >
+              {{ tab.label }}
+              <div class="line"></div>
+            </button>
+          </div>
+        </el-col>
+        <el-col
+          :sm="24"
+          :lg="16"
+        >
+          <div v-if="currentTab">
+            <div 
+              v-for="product in currentTab.products"
+              :key="product.id"
+              class="w-full"
+            >
+              <img :src="product.image" alt="" class="w-full">
             </div>
-          </el-col>
-          <el-col
-            :sm="24"
-            :lg="16"
-          >
-            <div v-if="currentTab">
-              <div 
-                v-for="product in currentTab.products"
-                :key="product.id"
-                class="w-full"
-              >
-                <img :src="product.image" alt="" class="w-full">
-              </div>
-            </div>
-          </el-col>
-        </el-row>
-      </div>
+          </div>
+        </el-col>
+      </el-row>
     </div>
+  </div>
 </template>
 <script>
 export default {

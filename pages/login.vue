@@ -143,6 +143,7 @@ export default {
   }
   .login__right{
     position: relative;
+    height: 100vh;
   }
   .login__right__content{
     position: absolute;

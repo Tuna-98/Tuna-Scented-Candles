@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@element-plus/nuxt',
     // 'tailwindcss',
     // 'autoprefixer',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    // 'swiper'
   ],
   
   alias: {},
