@@ -4,23 +4,41 @@
 export default defineNuxtConfig({
   // target: 'static',
   // css: ['~/public/assets/css/tailwind.css'],
-  devtools: { enabled: true },
+  // devtools: { enabled: true },
   
   modules: [
     '@nuxtjs/tailwindcss',
     '@element-plus/nuxt',
-    // 'tailwindcss',
+    'tailwindcss',
     // 'autoprefixer',
-    'nuxt-swiper',
-    'swiper'
+    // 'nuxt-swiper',
+    // 'swiper'
   ],
+  ssr: false,
   app: {
     head: {
-      title: 'Tuna Scented Candles',
-      meta: [
-        {name: 'Descrip',}
-      ]
-    }
+      title: 'App',
+      meta: [{ name: 'description', content: 'Nuxt 3 for beginners' }],
+    },
+    keepalive: false,
   },
-  alias: {},
+  components: [
+    '~/components/**/*',
+    {
+      path: '~/components',
+      extensions: ['vue'],
+      pathPrefix: false,
+    },
+  ],
+  css: ['/assets/css/style.css'],
+  vite: {
+    define: {
+      'window.global': {}
+    },
+    // resolve: {
+    //   alias: {
+    //     './runtimeConfig': './runtimeConfig.browser'
+    //   }
+    // }
+  }
 })
