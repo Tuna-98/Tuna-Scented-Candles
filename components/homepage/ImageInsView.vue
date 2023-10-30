@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ImageInsCard from '../ui/component/card/ImageInsCard.vue';
+import ImageInsCard from '../../ui/component/card/ImageInsCard.vue';
 export default {
     components: {
         ImageInsCard

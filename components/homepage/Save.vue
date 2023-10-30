@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import ButtonLink from "../ui/component/button/Button.vue";
+import ButtonLink from "../../ui/component/button/Button.vue";
 export default {
   components: {
     ButtonLink,

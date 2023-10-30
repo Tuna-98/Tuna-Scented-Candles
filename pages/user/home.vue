@@ -54,33 +54,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import SliderView from "../components/SliderView.vue";
-import ProductTypeView from "../components/ProductTypeView.vue";
-import VideoView from "../components/VideoView.vue";
-import RoomView from "../components/RoomView.vue";
-import TrendView from "../components/TrendView.vue";
-import ImageInsView from "../components/ImageInsView.vue";
-import Achievement from "../components/Achievement.vue";
-import NoteReason from "../components/NoteReason.vue";
-import Save from "../components/Save.vue"
-export default {
-  components: {
-    SliderView,
-    ProductTypeView,
-    VideoView,
-    RoomView,
-    TrendView,
-    ImageInsView,
-    Achievement,
-    NoteReason,
-    Save
-  },
-  data() {
-    return {};
-  },
-};
-</script>
-<style scoped>
-</style>

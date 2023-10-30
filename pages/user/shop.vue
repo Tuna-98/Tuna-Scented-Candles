@@ -15,8 +15,8 @@
   </div>
 </template>
 <script>
-import ProductList from '../components/shops/shop-product/ProductList.vue';
-import ShopLeft from '../components/shops/ShopLeft.vue';
+import ProductList from '../../components/shops/shop-product/ProductList.vue';
+import ShopLeft from '../../components/shops/ShopLeft.vue';
 export default {
   components: {
     ProductList,

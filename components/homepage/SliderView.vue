@@ -5,7 +5,7 @@
 </template>
 
 <script> 
-import Carousel from '../ui/component/carousel/Carousel.vue';
+import Carousel from '../../ui/component/carousel/Carousel.vue';
 export default {
     components: {
         Carousel,

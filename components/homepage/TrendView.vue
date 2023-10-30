@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import TrendCard from '../ui/component/card/TrendCard.vue';
+import TrendCard from '../../ui/component/card/TrendCard.vue';
 export default {
     components: {
         TrendCard

@@ -83,8 +83,8 @@
 <script>
 import Swiper from 'swiper';
 import '/swiper/css/swiper.min.css';
-import LoginForm from '../components/login/LoginForm.vue'
-import RegisterForm from '../components/login/RegisterForm.vue'
+import LoginForm from '../../components/login/LoginForm.vue'
+import RegisterForm from '../../components/login/RegisterForm.vue'
 export default {
   name: 'login',
   components:{

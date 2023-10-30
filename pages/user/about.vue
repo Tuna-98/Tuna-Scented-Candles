@@ -22,19 +22,15 @@
 </template>
 
 <script>
-import WhoWeArreVue from '../components/about/WhoWeArre.vue';
-import IntroVue from '../components/about/Intro.vue';
-import Feedback from '../components/feedback/Feedback.vue';
-import ProductsType from '../components/about/ProductsType.vue';
-import PartnerCard from '../ui/component/card/PartnerCard.vue';
+import WhoWeArreVue from '../../components/about/WhoWeArre.vue';
+import IntroVue from '../../components/about/Intro.vue';
+import Feedback from '../../components/feedback/Feedback.vue';
+import ProductsType from '../../components/about/ProductsType.vue';
+import PartnerCard from '../../ui/component/card/PartnerCard.vue';
 export default {
   name: 'about',
   components: {
     IntroVue,
-
-
-
-
     WhoWeArreVue,
     Feedback,
     PartnerCard,

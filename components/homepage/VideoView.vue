@@ -35,7 +35,7 @@
   </div>
 </template>
 <script>
-import VideoModal from "../ui/component/modal/VideoModal.vue";
+import VideoModal from "../../ui/component/modal/VideoModal.vue";
 export default {
   components: {
     VideoModal,

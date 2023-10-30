@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import RoomCard from "../ui/component/card/RoomCard.vue";
-import Title from "../ui/component/title/Title.vue"
+import RoomCard from "../../ui/component/card/RoomCard.vue";
+import Title from "../../ui/component/title/Title.vue"
 export default {
   components: {
     RoomCard,

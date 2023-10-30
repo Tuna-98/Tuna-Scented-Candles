@@ -12,7 +12,7 @@
     </div>
 </template>
 <script>
-import TabList from '../ui/component/tab/Tab.vue';
+import TabList from '../../ui/component/tab/Tab.vue';
 export default {
     components: {
         TabList,
