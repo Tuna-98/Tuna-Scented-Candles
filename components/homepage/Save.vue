@@ -1,29 +1,29 @@
 <template>
   <div class="save mt-20">
     <el-row>
-        <el-col :sm="24" :lg="12">
-          <div class="w-full">
-            <img
-              src="../public/assets/images/m3-bg-2.jpg"
-              alt=""
-              class="w-full"
-            />
+      <el-col :sm="24" :lg="12">
+        <div class="w-full">
+          <img
+            src="../../assets/images/m3-bg-2.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+      </el-col>
+      <el-col :sm="24" :lg="12" class="px-12">
+        <div class="w-full h-full flex flex-col justify-center pr-20">
+          <div>
+            <h1 class="">Candles to make you save more</h1>
+            <p class="mt-8 pr-20">
+              Purus gravida quis blandit turpis cursus. Gravida in fermentum et
+              sollicitudin ac orci. Sit amet dictum sit amet justo. Semper
+              auctor neque vitae tempus quam pellentesque.
+            </p>
+            <button class="mt-8">SHOP MORE</button>
           </div>
-        </el-col>
-        <el-col :sm="24" :lg="12" class="px-12">
-          <div class="w-full h-full flex flex-col justify-center pr-20">
-            <div>
-              <h1 class="">Candles to make you save more</h1>
-              <p class="mt-8 pr-20">
-                Purus gravida quis blandit turpis cursus. Gravida in fermentum et
-                sollicitudin ac orci. Sit amet dictum sit amet justo. Semper
-                auctor neque vitae tempus quam pellentesque.
-              </p>
-              <button class="mt-8">SHOP MORE</button>
-            </div>
-          </div>
-        </el-col>
-      </el-row>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 

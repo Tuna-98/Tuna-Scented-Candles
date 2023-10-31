@@ -9,7 +9,7 @@
               <div class="w-full">
                 <h1 class="title text-5xl text-white">{{ slide.title }}</h1>
                 <p class="subtitle text-white mt-3">{{ slide.subtitle }}</p>
-                <Button :routerLink="slide.routerLink" class="button text-white mt-8 border px-3 py-2.5">SHOP MORE</Button>
+                <NuxtLink to="/user/shop" :routerLink="slide.routerLink" class="text-white mt-8 border px-2 py-4">SHOP MORE</NuxtLink>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default {
   p{
     font-size: 24px;
   }
-  button{
+  /* button{
     border: 2px solid #FFFFFF;
     padding: 12px 24px;
     margin-top: 16px;
@@ -99,6 +99,6 @@ export default {
     background: #DB572E;
     color: #FFFFFF;
     transition: .3s;
-  }
+  } */
 </style>
   

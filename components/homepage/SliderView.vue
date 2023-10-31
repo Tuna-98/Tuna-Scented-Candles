@@ -1,15 +1,9 @@
-<template>
-    <div>
-        <Carousel :slides="slides.slice(0, 4)"/>
-    </div>
-</template>
-
 <script> 
 import Carousel from '../../ui/component/carousel/Carousel.vue';
 export default {
     components: {
         Carousel,
-    },  
+    },
     data(){
         return{
             slides: [
@@ -30,6 +24,12 @@ export default {
     },
 }
 </script>
+
+<template>
+    <div>
+        <Carousel :slides="slides.slice(0, 4)"/>
+    </div>
+</template>
 
 <style>
 

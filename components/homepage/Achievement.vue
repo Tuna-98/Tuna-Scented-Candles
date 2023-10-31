@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
     .achievement{
-        background-image: url(../public/assets/images/m3-bg-3.jpg);
+        background-image: url(../../public/assets/images/m3-bg-3.jpg);
     }
     h1{
         font-size: 86px;

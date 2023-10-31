@@ -26,7 +26,7 @@
                 <el-col :sm="24" :lg="16" class="p-1">
                   <div class="image w-full h-full">
                     <img
-                      src="../public/assets/images/notes/img1.jpg"
+                      src="../../public/assets/images/notes/img1.jpg"
                       alt=""
                       class="w-full h-full"
                     />
@@ -38,7 +38,7 @@
                       <el-col :sm="12" :lg="24" class="p-1">
                         <div class="image w-full h-full">
                           <img
-                            src="../public/assets/images/notes/img2.jpg"
+                            src="../../public/assets/images/notes/img2.jpg"
                             alt=""
                             class="w-full h-full"
                           />
@@ -47,7 +47,7 @@
                       <el-col :sm="12" :lg="24" class="p-1">
                         <div class="image w-full h-full">
                           <img
-                            src="../public/assets/images/notes/img3.jpg"
+                            src="../../public/assets/images/notes/img3.jpg"
                             alt=""
                             class="w-full h-full"
                           />

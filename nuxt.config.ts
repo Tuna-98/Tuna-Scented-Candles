@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@element-plus/nuxt',
-    'tailwindcss',
     // 'autoprefixer',
     // 'nuxt-swiper',
     // 'swiper'

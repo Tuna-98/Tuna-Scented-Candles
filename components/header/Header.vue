@@ -1,9 +1,7 @@
 <script setup lang="ts">
-  // import { useNav } from "../../composables/useNav"
-
   const route = useRoute();
-
   const { navigation, routeNav } = useNav(); 
+  
 </script>
 <template>
   <header class="bg-white">
@@ -38,7 +36,7 @@
           </ul>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NuxtLink to="/login" class="text-sm font-semibold leading-6 text-gray-900">Login <span aria-hidden="true">&rarr;</span></NuxtLink>
+          <NuxtLink to="/auth/login" class="text-sm font-semibold leading-6 text-gray-900">Login <span aria-hidden="true">&rarr;</span></NuxtLink>
         </div>
       </nav>
     </div>
